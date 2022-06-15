@@ -1,0 +1,14 @@
+body {
+    background-image: url(./media/background.jpg);
+    background-attachment: fixed;
+}   
+.navbar-dark .nav-item .nav-link {
+  color: #fff;
+}
+.nav-link:hover{
+    transform: scale(1.1);
+}
+.nav-link:active{
+    border-radius: 20%;
+    background-color: slategrey;
+}

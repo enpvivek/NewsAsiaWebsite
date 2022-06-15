@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="icon" href="./media/newslogo.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>NewsAsia</title>
+  </head>
+  <body>
+    <!-- Navbar Starting-->
+
+    <!--Main Navigation-->
+    <header class="mb-5 fixed-top" id="myHeader">
+      <!-- Jumbotron -->
+      <div class="p-3 text-center text-white" style="background-color: #131921">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-md-4 d-flex justify-content-center justify-content-md-start mb-3 mb-md-0"
+            >
+              <a href="#!" class="ms-md-2">
+                <img src="./media/logo.png" height="40" />
+              </a>
+            </div>
+
+            <div class="col-md-4">
+              <form class="d-flex input-group w-auto my-auto mb-3 mb-md-0">
+                <input
+                  autocomplete="off"
+                  type="search"
+                  class="form-control rounded"
+                  placeholder="Search"
+                />
+                <span class="input-group-text border-0 d-none mx-2 d-lg-flex"
+                  ><i class="fas fa-search text-black"></i
+                ></span>
+              </form>
+            </div>
+
+            <div
+              class="col-md-4 d-flex justify-content-center justify-content-md-end align-items-center"
+            >
+              <div class="d-flex">
+                <!-- User -->
+                <div class="dropdown me-lg-0 d-none d-md-inline-block">
+                  <a
+                    class="text-reset btn btn-secondary dropdown-toggle d-flex align-items-center hidden-arrow"
+                    href="#"
+                    id="dropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img
+                      src="./media/user.png"
+                      class="rounded-circle"
+                      height="24"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </a>
+                  <ul
+                    class="dropdown-menu dropdown-menu-end"
+                    aria-labelledby="dropdownMenuLink"
+                  >
+                    <li><a class="dropdown-item" href="#">My profile</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Jumbotron -->
+
+      <!-- Navbar -->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark"
+        style="background-color: #232f3e"
+      >
+        <!-- Container wrapper -->
+        <div
+          class="container justify-content-center justify-content-md-between"
+        >
+          <!-- Left links -->
+          <ul class="navbar-nav flex-row px-1">
+            <li class="nav-item me-2 me-lg-0">
+              <a
+                class="nav-link"
+                href="#"
+                role="button"
+                data-mdb-toggle="sidenav"
+                data-mdb-target="#sidenav-1"
+                class="btn shadow-0 p-0 me-3"
+                aria-controls="#sidenav-1"
+                aria-haspopup="true"
+              >
+                <i class="fas fa-bars"></i>
+                <span>Categories</span>
+              </a>
+            </li>
+            <li class="nav-item ms-md-4 me-md-4 px-1">
+              <a class="nav-link" onclick="business()" href="#">Business</a>
+            </li>
+            <li class="nav-item me-md-4 me-sm-2 px-1">
+              <a class="nav-link" onclick="sports()" href="#">Sports</a>
+            </li>
+            <li class="nav-item me-md-4 me-sm-2 px-1">
+              <a class="nav-link" onclick="science()" href="#">Science</a>
+            </li>
+            <li class="nav-item me-md-4 me-sm-2 px-1">
+              <a class="nav-link" onclick="technology()" href="#">Technology</a>
+            </li>
+          </ul>
+          <!-- Left links -->
+
+          <button
+            class="btn btn-outline-light me-lg-0 d-none d-md-inline-block"
+            type="button"
+          >
+            Download app<i class="fas fa-download mx-2 ms-2"></i>
+          </button>
+        </div>
+        <!-- Container wrapper -->
+      </nav>
+      <!-- Navbar -->
+    </header>
+    <!--Main Navigation-->
+    <!-- Navbar Closing -->
+
+    <!-- Card Div Starting -->
+    <div class="container my-5">
+      <hr />
+      hi
+    </div>
+    <!-- Card Div Ending -->
+
+    <!-- Main Div Starting -->
+    <div class="container mt-5" id="container"></div>
+    <!-- Main Div Ending -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
